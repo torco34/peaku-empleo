@@ -1,0 +1,38 @@
+.containerPages {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.containerCard {
+  position: relative;
+  border: solid ;
+  left: 52%;
+  transform: translate(-49%, 5%);
+  width: 93%;
+  -webkit-transform: translate(-49%, 5%);
+  -moz-transform: translate(-49%, 5%);
+  -ms-transform: translate(-49%, 5%);
+  -o-transform: translate(-49%, 5%);
+  /* transition: box-shadow 0.3s, border-radius 0.3s; */
+}
+.containerImg {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 80px;
+ 
+}
+.containerImg img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.containerCard:hover {
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.5); /* Efecto de sombra solo en la parte inferior */
+  border-bottom-left-radius: 10px; /* Redondeado en la esquina inferior izquierda */
+  border-bottom-right-radius: 10px; /* Redondeado en la esquina inferior derecha */
+  cursor: pointer;
+}

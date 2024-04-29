@@ -1,0 +1,34 @@
+.containerMenu {
+  position: relative;
+  z-index: 1;
+  width: 100px;
+  height: 80vh;
+  background-color: white;
+}
+.icon-list-item {
+  font-size: 16px;
+}
+.texto {
+  font-size: 10px;
+}
+.containerMenu2 {
+  position: relative;
+  width: 230px;
+  background-color: #fff;
+  height: 80vh;
+  z-index: 1;
+}
+.btn-unstyled {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  left: 200px;
+}
+.bg:hover {
+  background-color: #b2e3ff;
+}
