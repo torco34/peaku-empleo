@@ -1,64 +1,28 @@
-.colore {
-  background-color: #3a8ced;
-  background-color: #f8f9fa;
-  color: #7b9db0;
-  color: #343a40;
-}
-.nav-body {
-  background-color: #3a8ced;
-  height: vh;
-  text-align:center ;
+#containerBlue {
+  height: 70px;
+  position: fixed !important;
+  z-index: 1 !important;
+  width: 100%;  
 }
 
-.rounded-button {
-  background-color: #3a8ced; /* Color de fondo del botón */
-  border: solid 1px #f8f9fa; /* Elimina el borde del botón */
-  color: #f8f9fa; /* Color del texto */
-  padding: 5px 22px; /* Espaciado interior del botón */
-  text-align: center; /* Alineación del texto */
-  text-decoration: none; /* Quita subrayado del texto */
-  display: inline-block; /* Permite que el botón se comporte como un elemento en línea */
-  font-size: 16px; /* Tamaño del texto */
-  margin: 4px 2px; /* Margen exterior */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
-  border-radius: 20px; /* Bordas ovalados */
-  transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+.search-input{
+  margin-left: 120px;
 }
 
-.rounded-button:hover {
-  background-color: #f8f9fa;
-  color: #343a40;
-}
-.search-container {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-}
-
-.search-input {
-  padding: 10px 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 500px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+.btn-blue{
+  border-radius: 40px;
+  border-color: aliceblue;
+  border: solid 1px white;
+  color: white;
+  font-size: 10px;
+  float: inline-end;
 }
 
-.search-icon {
-  margin-left: -490px;
-  z-index: 1;
+.btn-blue:hover{
+  background-color: white !important;
+  color: black !important;
 }
 
-/* Estilos del icono */
-.search-icon .svg {
-font-size: 20px;
-
-  fill: #666; /* Ajusta el color del icono según sea necesario */
-  cursor: pointer;
-}
-.search-input::placeholder {
-  letter-spacing: 1px;
-  text-align: center;
+.MdAccountCircle {
+  background-color: blue;
 }

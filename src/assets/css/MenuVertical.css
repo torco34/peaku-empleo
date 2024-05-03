@@ -4,12 +4,17 @@
   width: 100px;
   height: 80vh;
   background-color: white;
+  
 }
 .icon-list-item {
   font-size: 16px;
+  padding: 8px;
+  margin: 5px;
+  
 }
 .texto {
   font-size: 10px;
+  font-weight:bold;
 }
 .containerMenu2 {
   position: relative;
@@ -19,7 +24,7 @@
   z-index: 1;
 }
 .btn-unstyled {
-  position: relative;
+  position: absolute;
   background: none;
   border: none;
   padding: 0;
@@ -27,7 +32,7 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  left: 200px;
+  left: 95px;
 }
 .bg:hover {
   background-color: #b2e3ff;
