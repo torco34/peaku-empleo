@@ -8,8 +8,8 @@
 }
 .icon-list-item {
   font-size: 16px;
-  padding: 8px;
-  margin: 5px;
+  padding: 3px 1.6px;
+  margin: 3px;
   
 }
 .texto {
@@ -36,4 +36,8 @@
 }
 .bg:hover {
   background-color: #b2e3ff;
+}
+
+.icon-list-item:hover {
+  background-color: #b2e3ff
 }
