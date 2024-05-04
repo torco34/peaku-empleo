@@ -1,21 +1,20 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import "../assets/css/JobListing.css"
 
-
-export const JobListing = ({ items }) => {
+export const JobListing = ({ name, icon }) => {
   return (
     <>
-      <div className=" " style={{ width: "100%" }}>
-        <Container>
+      <div className="containerText">
+    
           <Row>
-            {items.map((item, index) => (
-              <Col key={index}>
-                <span className="p-1">{item.icon}</span>
-                <span className=""> {item.text}</span>
-              </Col>
-            ))}
+            <Col className="d-flex align-items-center my-2">
+            <span className="">{icon}</span>
+              <span className="textSize">{name}</span>
+            </Col>
           </Row>
-        </Container>
+      
+
       </div>
     </>
   );

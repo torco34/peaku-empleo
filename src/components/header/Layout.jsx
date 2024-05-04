@@ -3,15 +3,15 @@ import { Header } from "./Header";
 import { BsCaretDownFill } from "react-icons/bs";
 export const Layout = ({ children }) => {
   const navbarItems = [
-    { name: "Empleo", route: "/empleo" },
-    { name: "Bootcamp", route: "/bootcamp" },
-    { name: "Sobre nosotros", route: "/empleo" },
+    { id: 0, name: "Empleo", route: "/empleo" },
+    {id: 1, name: "Bootcamp", route: "/" },
+    { id: 2, name: "Sobre nosotros", route: "/empleo" },
     {
-      name: "Para profesionales",
+      id: 3, name: "Para profesionales",
       route: "/nosotros",
       icon: <BsCaretDownFill />,
     },
-    { name: "Para empresas", route: "/nosotros", icon: <BsCaretDownFill /> },
+    { id: 4, name: "Para empresas", route: "/nosotros", icon: <BsCaretDownFill /> },
    
   ];
 

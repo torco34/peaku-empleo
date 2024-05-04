@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Navbar, Button } from "react-bootstrap";
-import { BsCaretDownFill } from "react-icons/bs";
-import { HiMiniMagnifyingGlass } from "react-icons/hi2";
+import { BsCaretDownFill,  BsSearch } from "react-icons/bs";
+
 import { NavLink } from "react-router-dom";
 import "../assets/css/Header.css";
 export const Card = () => {
@@ -17,12 +17,12 @@ export const Card = () => {
           />
         </form>
         <div className="search-icon">
-          <HiMiniMagnifyingGlass className="svg" />
+        <BsSearch />
         </div>
       </div>
       <div className="">
         {navLinks.map((nav, index) => (
-          <button className="rounded-button">
+          <button className="rounded-button" key={index}>
             {nav}
             <BsCaretDownFill />
           </button>

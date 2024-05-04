@@ -1,102 +1,51 @@
-import React from "react";
-import { ToggleMenuButton } from "../components/ToggleMenuButton";
-import { Card } from "../components/Card";
-import { LuMapPin } from "react-icons/lu";
-import { JobListing } from "../components/JobListing";
-import {
-  BsBuildings,
-  BsJournalArrowDown,
-  BsCalendar3,
-  BsPeople,
-} from "react-icons/bs";
+import React, { useEffect, useState } from "react";
 
-import { FaRegMoneyBillAlt } from "react-icons/fa";
+import { Card } from "../components/Card";
+import { JobListing } from "../components/JobListing";
 import { Buttons } from "../components/common/Buttons";
 import "../assets/css/JobListPages.css";
-import imgIcon from "../assets/img/icon.png";
-export const JobListPages = () => {
-  const items = [
-    
-    { text: "Phidias", icon: <BsBuildings /> },
-    { text: "Remoto", icon: <LuMapPin /> },
-    { text: "$1.9m COP", icon: <FaRegMoneyBillAlt /> },
-    { text: "1 vacante", icon: <BsPeople /> },
-    { text: "un dia ago", icon: <BsCalendar3 /> },
-    { text: <BsJournalArrowDown />, icon: <BsPeople /> },
-  ];
+import { IconTextList } from "../api/IconTextList";
+import { IconsCollection } from "../components/common/IconsCollection";
+import MenuVertical from "../components/header/MenuVertical";
 
-    const items2 = [
-     
-      { text: "", icon: <BsBuildings /> },
-      { text: "Remoto", icon: <LuMapPin /> },
-      { text: "$1.9m COP", icon: <FaRegMoneyBillAlt /> },
-      { text: "1 vacante", icon: <BsPeople /> },
-      { text: "un dia ago", icon: <BsCalendar3 /> },
-      { text: <BsJournalArrowDown />, icon: <BsPeople /> },
-    ];
-  // className = "position-absolute top-0 z-index-5";
-  // shadow rounded
+export const JobListPages = () => {
   return (
     <div className="position-absolute top-0 containerPages">
       <Card />
-      <div className="p- mt-3 containerCard  border hove:shadow rounded flex-column ">
-        <div className="p-2 ">
-          <Buttons
-            text="Acconthyn Analices"
-            color="#ffff"
-            tamanoTexto={12}
-            title={"Aprendiz Sena Contador"}
-          />
-        </div>
+     
+      {IconTextList.map((item, i) => (
+        <div className="pb-2 mt-3 containerCard  rounded flex-column ">
+          <div className="container d-flex  align-items-center  py-2">
+            <p className="mx- mb-0 border fs-5 fw-bold">{item.title}</p>
 
-        <div className=" mt- mb-4">
-          <JobListing items={items} />
+            {item.botons &&
+              item.botons.map((name) => (
+                <Buttons
+                  key={name.id}
+                  text={name.boton}
+                  color="#ffff"
+                  tamanoTexto={12}
+                />
+              ))}
+          </div>
+          <div className=" container  d-flex  justify-content-arouter  align-items-center">
+            {item.names &&
+              item.names.map((name, j) => (
+                <JobListing name={name.name} icon={name.icon} />
+              ))}
+            {item.icons && 
+             item.icons.map((icon) =>(
+              <div>
+              <IconsCollection IconsButtons={icon.icon} />
+            </div>
+             )
+            )}
+          </div>
+          <div className="containerImg">
+            <img src={item.image} alt="icono" />
+          </div>
         </div>
-        <div className="containerImg">
-          <img src={imgIcon} alt="img-ico" />
-        </div>
-      </div>
-      <div className="p- mt-3 containerCard  border hove:shadow rounded flex-column ">
-        <div className="p-2 ">
-          <Buttons
-            text="Acconthyn Analices"
-            color="#ffff"
-            tamanoTexto={12}
-            title={"Aprendiz Sena Contador"}
-          />
-        </div>
-
-        <div className=" mt- mb-4">
-          <JobListing items={items} />
-        </div>
-        <div className=" mt- mb-4">
-          <JobListing items={items2} />
-        </div>
-        <div className="containerImg">
-          <img src={imgIcon} alt="img-ico" />
-        </div>
-      </div>
-      {/* jrfnf */}
-      <div className="p- mt-3 containerCard  border hove:shadow rounded flex-column ">
-        <div className="p-2 ">
-          <Buttons
-            text="Acconthyn Analices"
-            color="#ffff"
-            tamanoTexto={12}
-            title={"Aprendiz Sena Contador"}
-          />
-        </div>
-
-        <div className=" mt- mb-4">
-          <JobListing items={items} />
-        </div>
-        <div className=" mt- mb-4">
-          
-        </div>
-        <div className="containerImg">
-          <img src={imgIcon} alt="img-ico" />
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

@@ -5,7 +5,7 @@
 
 .containerCard {
   position: relative;
-  border: solid ;
+  border: solid 1px #ccc;
   left: 52%;
   transform: translate(-49%, 5%);
   width: 93%;
@@ -13,7 +13,6 @@
   -moz-transform: translate(-49%, 5%);
   -ms-transform: translate(-49%, 5%);
   -o-transform: translate(-49%, 5%);
-  /* transition: box-shadow 0.3s, border-radius 0.3s; */
 }
 .containerImg {
   position: absolute;
@@ -22,12 +21,11 @@
   display: flex;
   justify-self: center;
   align-items: center;
-  width: 80px;
- 
+  width: 100px;
 }
 .containerImg img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .containerCard:hover {
