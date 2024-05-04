@@ -7,12 +7,12 @@ import "../assets/css/JobListPages.css";
 import { IconTextList } from "../api/IconTextList";
 import { IconsCollection } from "../components/common/IconsCollection";
 import MenuVertical from "../components/header/MenuVertical";
+import { Header } from "../components/header/Header";
 
 export const JobListPages = () => {
   return (
     <div className="position-absolute top-0 containerPages">
-      <Card />
-     
+  
       {IconTextList.map((item, i) => (
         <div className="pb-2 mt-3 containerCard  rounded flex-column ">
           <div className="container d-flex  align-items-center  py-2">

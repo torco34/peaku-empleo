@@ -19,13 +19,13 @@ export const Header = ({ navbarItems }) => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary navbar1">
       <div className="container-fluid ">
         <a href="#"><img src="/logo-blue.png" alt="/img" /></a>
-        <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+        <div className="collaps  navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
           <ul className="navbar-nav  mb-2 mb-lg-0">
             <li className="nav-item">
               <a href="" className="nav-link active" aria-current="page">Empleos</a>
             </li>
             <li className="nav-item">
-              <a href="" className="nav-link">Bootcamp</a>
+              <a href="" className="nav-link text-black-300">Bootcampdddd</a>
             </li>
             <li className="nav-item">
               <a href="" class="nav-link">Sobre nosotros</a>

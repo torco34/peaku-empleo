@@ -1,4 +1,4 @@
-import { Footer } from "./Footer";
+
 import { Header } from "./Header";
 import { BsCaretDownFill } from "react-icons/bs";
 export const Layout = ({ children }) => {
@@ -19,7 +19,7 @@ export const Layout = ({ children }) => {
     <>
       <Header navbarItems={navbarItems} />
       {children}
-      <Footer />
+     
     </>
   );
 };
