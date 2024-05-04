@@ -27,24 +27,28 @@ export const Header = ({ navbarItems }) => {
             <li className="nav-item">
               <a href="" className="nav-link">Bootcamp</a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a href="" class="nav-link">Sobre nosotros</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Para profesionales
-              </a>
-              <ul class="dropdown-menu">
-                <li><a className="dropdown-item">Inicio</a></li>
-                <li><a className="dropdown-item">Empleos</a></li>
-                <li><a className="dropdown-item">Cursos y retos</a></li>
-                <li><a className="dropdown-item">Preguntas</a></li>
-                <li><a className="dropdown-item">Profesores</a></li>
-                <li><a className="dropdown-item">Bootcamp</a></li>
-              </ul>
+            <li className="nav-item dropdown">
+              <div className="navProfesionales">
+                <a className="nav-link dropdown-toggle" href="#" id="navProfesionales" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Para profesionales
+                </a>
+                <div className="dropdown-menu" aria-labelledby="navProfesionales">
+                  <ul className="lista" >
+                    <a>Inicio</a>
+                    <a>Empleos</a>
+                    <a>Cursos y retos</a>
+                    <a>Preguntas</a>
+                    <a>Profesores</a>
+                    <a>Bootcamp</a>
+                  </ul>
+                </div>                
+              </div>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                 Para empresas
               </a>
               <ul className="dropdown-menu">
@@ -85,19 +89,18 @@ export const Header = ({ navbarItems }) => {
             </div>
           </div>
           <div className="col d-flex justify-content-end dropdown m-b3">
-            <button className="btn btn-primary btn-blue area dropdown-toggle botones me-1" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Área</button>
-            <button className="btn btn-primary btn-blue dropdown-toggle me-1" type="button" data-bs-toggle="dropdown"
+            <button className="btn btn-primary btn-blue area dropdown-toggle botones " type="button" data-bs-toggle="dropdown"
+              aria-expanded="true">Área</button>
+            <button className="btn btn-primary btn-blue dropdown-toggle " type="button" data-bs-toggle="dropdown"
               aria-expanded="false">Cargo</button>
-            <button className="btn btn-primary btn-blue dropdown-toggle me-1" type="button" data-bs-toggle="dropdown"
+            <button className="btn btn-primary btn-blue dropdown-toggle " type="button" data-bs-toggle="dropdown"
               aria-expanded="false">Salario</button>
-            <button className="btn btn-primary btn-blue dropdown-toggle me-5" type="button" data-bs-toggle="dropdown"
+            <button className="btn btn-primary btn-blue dropdown-toggle" type="button" data-bs-toggle="dropdown"
               aria-expanded="false">Ubicación</button>
           </div>
         </div>
       </div>
       <MenuVertical />
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
       {/* AQUÍ SE  RENDERIZAN  LAS PAGINAS EN <Outlet/> */}
       <Outlet />

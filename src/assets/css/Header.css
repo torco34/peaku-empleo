@@ -14,12 +14,14 @@
 }
 
 .btn-blue{
-  border-radius: 40px;
-  border-color: aliceblue;
-  border: solid 1px white;
+  border-radius: 45px;
   color: white;
+  height: min-content;
   font-size: 10px;
   float: inline-end;
+  align-self: center;
+  border: 2px white;
+  padding-right: 1rem ;
 }
 
 .btn-blue:hover{
@@ -50,4 +52,23 @@
     position: fixed;
     height: 33px;
 
+  }
+
+  #navProfesionales {
+    position: relative;    
+  }
+
+  .lista {
+    display: none; /* Inicialmente oculta la lista */
+    position: absolute; /* Posiciona la lista de manera absoluta */
+    top: 100%; /* La posiciona debajo del botón */
+    left: 0; /* La posiciona a la izquierda del botón */
+    background-color: white; /* Color de fondo de la lista */
+    padding: 10px;
+    border: 1px solid gray; /* Borde de la lista */
+  }
+
+  #navProfesionales:hover + .lista {
+    display: block; /* Muestra la lista al pasar el mouse sobre el botón */
+    background-color: red;
   }
