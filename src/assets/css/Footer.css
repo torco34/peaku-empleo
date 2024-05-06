@@ -1,0 +1,20 @@
+
+
+
+.footer {
+  position: fixed;
+  bottom: -200px; /* Establece el footer fuera de la pantalla */
+  left: 0;
+  width: 100%;
+  background-color: #3a8ced;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 200px;
+  transition: bottom 0.3s ease; /* Agrega una transición suave */
+}
+
+.footer-visible {
+  bottom: 0px; 
+  
+}

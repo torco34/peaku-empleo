@@ -1,7 +1,0 @@
-.no-shadow-offcanvas .offcanvas-backdrop {
-  background-color: transparent !important; /* Elimina la sombra */
-}
-
-.no-shadow-offcanvas offcanvas {
-  box-shadow: none !important; /* Elimina la sombra */
-}

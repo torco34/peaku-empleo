@@ -1,21 +1,23 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Layout } from "./components/header/Layout";
 import { JobListPages } from "./pages/JobListPages";
 import { HomePages } from "./pages/HomePeges";
 import { Header } from "./components/header/Header";
+import { Footer } from "./components/header/Footer";
+import { Bootcamp } from "./pages/Bootcamp";
+import { ErrorPage } from "./pages/ErrorPage";
 
 function App() {
   return (
     <>
       <Router>
+        <Header />
         <Routes>
-          <Route element={< Header />}>
-            <Route index path="/" element={<HomePages />} />
-            <Route path="/empleo" element={<JobListPages />} />
-            <Route path="/bootcamp" element={<p>Bootcamp</p>} />
-            <Route path="/empleo" element={<p>empleo</p>} />
-          </Route>
+          <Route index path="/" element={<HomePages />} />
+          <Route path="/empleo" element={<JobListPages />} />
+          <Route path="/boot" element={<Bootcamp />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

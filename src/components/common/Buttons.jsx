@@ -9,7 +9,7 @@ export const Buttons = ({ text, color, tamanoTexto }) => {
     color: "#000",
     cursor: "pointer",
     width: "100%",
-    height: "20px",
+    height: "auto",
     fontSize: `${tamanoTexto}px`,
   };
   return (

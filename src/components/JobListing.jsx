@@ -1,20 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "../assets/css/JobListing.css"
+import { BsJournalArrowDown, BsBagFill } from "react-icons/bs";
 
-export const JobListing = ({ name, icon }) => {
+export const JobListing = ({ icon, name }) => {
   return (
     <>
-      <div className="containerText">
-    
-          <Row>
-            <Col className="d-flex align-items-center my-2">
-            <span className="">{icon}</span>
-              <span className="textSize">{name}</span>
-            </Col>
-          </Row>
-      
-
+      <div className="container mx-auto gap-1 w-full hidden lg:flex  justify-center items-center mb-4">
+        <span className="">{icon}</span>
+        <span className="">{name}</span>
       </div>
     </>
   );

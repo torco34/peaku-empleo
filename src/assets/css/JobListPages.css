@@ -1,35 +1,46 @@
 .containerPages {
+  
   width: 100%;
-  margin-top: 70px;
+  /* margin-top:10px; */
+
 }
 
 .containerCard {
   position: relative;
-  border: solid 1px #ccc;
+  border: solid 1px #c1c1c1;
   left: 52%;
+  height: 100px;
+  top: 50px;
   transform: translate(-49%, 5%);
-  width: 93%;
+  width: 92%;
+  margin-top:50px;
+  padding: 0;
   -webkit-transform: translate(-49%, 5%);
   -moz-transform: translate(-49%, 5%);
   -ms-transform: translate(-49%, 5%);
   -o-transform: translate(-49%, 5%);
+  margin-bottom: 0;
+
 }
 .containerImg {
-  position: absolute;
-  top: 10px;
-  left: 30px;
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  width: 100px;
+ position: absolute;
+  left: 70px;
+ width: 100px;
+ top: 0%;
+ padding: 20px;
+
+
+
+
 }
 .containerImg img {
   width: 100%;
   border-radius: 60%;
+  font-size: calc(1vw + 1vw);
 }
 
 .containerCard:hover {
-  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.5); /* Efecto de sombra solo en la parte inferior */
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.6); /* Efecto de sombra solo en la parte inferior */
   border-bottom-left-radius: 10px; /* Redondeado en la esquina inferior izquierda */
   border-bottom-right-radius: 10px; /* Redondeado en la esquina inferior derecha */
   cursor: pointer;

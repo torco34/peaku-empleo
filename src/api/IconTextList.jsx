@@ -29,8 +29,8 @@ export const IconTextList = [
       { boton: "Lead Work Teams" },
     ],
     names: [
-      { id: 1, name: "Metlife Technologies/Tec", icon: <BsBuildings /> },
-      { id: 2, name: "Hibrido - mix remoto ...", icon: <LuMapPin /> },
+      { id: 1, name: "Metlife Technologies", icon: <BsBuildings /> },
+      { id: 2, name: "Hibrido-mix remoto", icon: <LuMapPin /> },
       { id: 2, name: "Confidencial", icon: <BsCash /> },
       { id: 3, name: "1 vacante", icon: <BsPeople /> },
       { id: 3, name: "about 15 hours ago", icon: <BsCash /> },
@@ -199,6 +199,28 @@ export const IconTextList = [
     ],
   },
   {
+    id: 9,
+
+    title: "Tester de Software",
+    image: img3,
+    botons: [
+      { boton: "commercial Aggressivenes" },
+      { boton: "Negotiating  Capacity " },
+    ],
+    names: [
+      { id: 1, name: "Metlife Medellin", icon: <BsBuildings /> },
+      { id: 2, name: "Medellin", icon: <LuMapPin /> },
+      { id: 2, name: "$ 2.9M -6M COP", icon: <BsCash /> },
+      { id: 3, name: "1 vacante", icon: <BsPeople /> },
+      { id: 3, name: "about 17 hours ago", icon: <BsCash /> },
+    ],
+    icons: [
+      { icon: <BsFileEarmarkCheck /> },
+      { icon: <BsEmojiSmile /> },
+      { icon: <BsJournalCheck /> },
+    ],
+  },
+  {
     id: 10,
     title: "Desarrollador de software",
     image: img3,
@@ -219,4 +241,27 @@ export const IconTextList = [
       { icon: <BsJournalCheck /> },
     ],
   },
+  {
+    id: 7,
+    title: "Ingeniero de infraestructura TI",
+    image: img4,
+    botons: [
+      { boton: "Confidencial" },
+      { boton: "Compliance With indication" },
+      { boton: "liderazgo" },
+    ],
+    names: [
+      { id: 1, name: "Confidencial", icon: <BsBuildings /> },
+      { id: 2, name: "Bucaramanga", icon: <LuMapPin /> },
+      { id: 2, name: "$ 2.9M -6M COP", icon: <BsCash /> },
+      { id: 3, name: "1 vacante", icon: <BsPeople /> },
+      { id: 3, name: "about 17 hours ago", icon: <BsCash /> },
+    ],
+    icons: [
+      { icon: <BsFileEarmarkCheck /> },
+      { icon: <BsEmojiSmile /> },
+      { icon: <BsJournalCheck /> },
+    ],
+  },
+  
 ];

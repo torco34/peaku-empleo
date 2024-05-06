@@ -2,8 +2,7 @@
   position: relative;
   z-index: 1;
   width: 100px;
-  height: 80vh;
-  background-color: white;
+ 
   
 }
 .icon-list-item {
@@ -19,8 +18,8 @@
 .containerMenu2 {
   position: relative;
   width: 230px;
-  background-color: #fff;
-  height: 80vh;
+ 
+ 
   z-index: 1;
 }
 .btn-unstyled {
